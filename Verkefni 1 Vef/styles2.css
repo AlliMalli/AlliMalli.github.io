@@ -1,0 +1,135 @@
+/* rammar fyrir auglýsingar */
+.augl-rammi{
+  width: 300px;
+  height: 400px;
+}
+.augl-rammi-2{
+  width: 360px;
+  height: 360px;
+  float:right;
+}
+/* fyrir auglýsingu 1 */
+.container {
+    position: relative;
+   
+  }
+  
+  /* Gerir myndina meira "responsive" */
+  .container img {
+    width: 100%; 
+    height: auto;
+  }
+  
+  /* Gerir takkan og setur hann í miðju */
+  .container .btn {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(25%, -50%);
+    -ms-transform: translate(25%, -50%);
+    background-color: #00aaff;
+    background-image: linear-gradient(to bottom, #0080ff 0%, #0055ff 50%, #002aff 50%, #0000ff 100%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+/* fyrir auglýsingu 2 */
+.container-2 {
+  position: relative;
+  }
+  .container-2 img {
+    width: 100%; 
+    height: auto;
+  }
+  .container-2 .centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* auglýsing 1 animation */
+#intro {
+  position: relative;
+  animation: intro 3s ease-in-out; 
+  animation-direction: alternate;
+}
+@keyframes intro {
+  0% {
+    left: -25em;
+  }
+  100% {
+    left: 0em;
+  }
+}
+/* mynd 1 á auglýsingu 2*/
+#intro2 {
+  position: relative;
+  animation: intro 6s ease-in-out; 
+  animation-direction: alternate;
+  animation-name: ImageThing;
+  animation-fill-mode: forwards;
+}
+@keyframes ImageThing {
+  0% {
+    right: -25em;
+  }
+  50% {
+    right: 0em;
+  }
+  51% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+/* mynd 1 breytist í mynd 2 */
+#intro3 {
+  position: relative;
+  animation: intro 5s ease-in-out; 
+  animation-direction: alternate;
+  animation-name: ImageThing2;
+  animation-fill-mode: forwards;
+}
+@keyframes ImageThing2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/* nafnið segir sig sjálft, þetta er fyrir takkann */
+#fadeIn {
+  border-radius: .4em;
+  animation-name: FadeIn;
+  animation-duration: 12s;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity:0;
+  }
+  25% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity:1;
+  }
+}
