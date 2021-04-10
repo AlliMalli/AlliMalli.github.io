@@ -1,0 +1,110 @@
+body {
+    font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  }
+  input {
+    display: none;
+  }
+  label,
+  ul {
+    border: 1px solid #cecfd5;
+    border-radius: 20px;
+  }
+  label {
+    color: #00a9ff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 9px;
+    transition: all .25s ease-in-out;
+  }
+  label:hover {
+    color: #0055ff;
+  }
+  input:checked + label {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #0000ff;
+  }
+  nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .25s ease;
+  }
+  input:checked ~ nav {
+    max-height: 500px;
+  }
+  ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+    width: 100px;
+  }
+  li {
+    border-bottom: 1px solid #cecfd5;
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
+  a {
+    color: #00a9ff;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #0000ff;
+  }
+  @media screen and (min-width: 720px){
+    label{display: none;}
+    nav{
+      max-height: 500px;
+    }
+    ul {
+      margin: 0px 0 0 0;
+      display: flex;
+      flex-flow: row;
+      border: 0;
+    }
+  }
+
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?21pmmf');
+    src:  url('fonts/icomoon.eot?21pmmf#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?21pmmf') format('truetype'),
+      url('fonts/icomoon.woff?21pmmf') format('woff'),
+      url('fonts/icomoon.svg?21pmmf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-youtube:before {
+    content: "\ea9d";
+  }
+  .icon-twitch:before {
+    content: "\ea9f";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }  
+  .icons{
+    font-size: 2.2em;
+  }
+}
