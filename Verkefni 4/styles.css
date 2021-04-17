@@ -1,0 +1,63 @@
+html {
+    background-color: #00ffff
+  }
+  
+  body{
+    width: 600px;
+  }
+  
+  .input-group{
+    display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+  }
+  
+  .input-group p{
+    width: 33.3%;
+    padding: 0 10px;
+    input:valid {
+      color: green;
+    }
+    input:invalid {
+      color: red;
+    }
+  }
+  
+  .input-group input{
+    width: 100%;
+  }
+  
+  input {
+    display: block;
+    border: white solid;
+    background: #;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: #574026;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+  }
+#grid {
+    display: grid;
+    grid-gap: 20px;
+}
+
+#grid-1 {
+    grid-column: 1/2;
+}
+
+#grid-2 {
+    grid-column: 2/3;
+}
+
+#grid-3 {
+    grid-column: 3/4;
+}
+
+#grid-4 {
+    grid-column: 4/5;
+}
